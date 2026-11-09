@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Infinity Residence · Confidențialitate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@400;500;700&display=swap">
+<style>
+  /* Layout: one readable column like a notice on the block's noticeboard; mustard tape on the header card. */
+  :root {
+    --bg: #f4f1ea;
+    --paper: #fffdf8;
+    --ink: #1f2a40;
+    --muted: #5b6577;
+    --line: #ddd5c4;
+    --navy: #27385a;
+    --mustard: #f2b134;
+    --display: "Bungee", "Arial Black", Impact, sans-serif;
+    --body: "Rubik", -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121a2b; --paper: #1a2438; --ink: #e8ecf4; --muted: #a3afc4; --line: #2c3a55;
+      --navy: #f2b134; --mustard: #f2b134; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121a2b; --paper: #1a2438; --ink: #e8ecf4; --muted: #a3afc4; --line: #2c3a55;
+    --navy: #f2b134; --mustard: #f2b134; color-scheme: dark;
+  }
+  body {
+    background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6;
+    padding-block: 32px 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+  header {
+    position: relative; background: var(--paper); border: 1px solid var(--line); border-radius: 6px;
+    padding: 28px 24px 22px;
+  }
+  header::before, header::after {
+    content: ""; position: absolute; top: -10px; width: 74px; height: 22px; background: var(--mustard); opacity: .8;
+  }
+  header::before { left: 18px; transform: rotate(-6deg); }
+  header::after { right: 18px; transform: rotate(5deg); }
+  .kicker { font-family: var(--display); font-size: 13px; letter-spacing: .08em; color: var(--muted); }
+  h1 { font-family: var(--display); font-weight: 400; font-size: clamp(26px, 6vw, 38px); line-height: 1.15; margin: 6px 0 10px; color: var(--navy); text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .lang { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .lang a { font-size: 14px; color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; }
+  .lang a:focus-visible, a:focus-visible { outline: 2px solid var(--mustard); outline-offset: 2px; }
+  .summary { background: var(--paper); border-left: 4px solid var(--mustard); padding: 16px 20px; border-radius: 4px; }
+  .summary p { margin: 0; }
+  section { display: flex; flex-direction: column; gap: 10px; }
+  h2 { font-family: var(--body); font-weight: 700; font-size: 20px; margin: 8px 0 0; color: var(--navy); text-wrap: balance; }
+  p, li { max-width: 65ch; }
+  ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 500; color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+  tr:last-child td { border-bottom: 0; }
+  code { font-size: 14px; background: var(--bg); padding: 1px 5px; border-radius: 4px; }
+  hr { border: 0; border-top: 1px dashed var(--line); margin: 12px 0; }
+  .placeholder { background: var(--mustard); color: #1f2a40; padding: 0 4px; border-radius: 3px; }
+  footer { color: var(--muted); font-size: 14px; }
+  a { color: var(--navy); }
+</style>
+<style>:root{color-scheme:light}body{margin:0}</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">ANUNȚ LA AVIZIER</div>
+    <h1>Politica de confidențialitate a jocului Infinity Residence</h1>
+    <p class="meta">În vigoare de la 9 noiembrie 2026</p>
+    <nav class="lang" aria-label="Limbă / Language">
+      <a href="#ro">Română</a>
+      <a href="#en">English</a>
+    </nav>
+  </header>
+
+  <div class="summary" id="ro">
+    <p><strong>Pe scurt:</strong> jocul nu îți cere nume, email sau locație. Dacă accepți statisticile anonime, aflăm doar lucruri despre joc (de exemplu, până la ce etaj ai ajuns și din ce cauză a căzut blocul). Poți spune nu sau te poți răzgândi oricând din Setări.</p>
+  </div>
+
+  <section>
+    <h2>Cine răspunde de date</h2>
+    <p>Jocul Infinity Residence este dezvoltat de echipa Infinity Residence (Raw Coder), România. Pentru orice întrebare sau cerere legată de date, scrie la <strong>rawcoder@icloud.com</strong>.</p>
+  </section>
+
+  <section>
+    <h2>Ce rămâne doar pe telefonul tău</h2>
+    <p>Recordul, setările (sunet, muzică, voci, vibrații) și dacă ai văzut sfaturile de la început se salvează doar pe dispozitivul tău, ca jocul să funcționeze. Nu le trimitem nicăieri. Se șterg odată cu aplicația.</p>
+  </section>
+
+  <section>
+    <h2>Statisticile anonime (doar cu acordul tău)</h2>
+    <p>La prima pornire te întrebăm dacă vrei să ne ajuți cu statistici anonime. Până nu spui „Da”, nu se trimite nimic. Dacă accepți, jocul trimite următoarele:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ce</th><th>Exemplu</th><th>De ce</th></tr></thead>
+        <tbody>
+          <tr><td>Un ID aleator al instalării</td><td><code>3f2a…-…</code></td><td>ca să știm că mai multe ture vin de la același jucător, fără să știm cine e</td></tr>
+          <tr><td>Evenimente din joc</td><td>tură începută, etaj atins, etaj căzut, tură terminată</td><td>ca să vedem dacă jocul e prea greu sau prea ușor</td></tr>
+          <tr><td>Detalii despre o tură</td><td>înălțimea, zona blocului, cauza căderii, durata</td><td>ca să vedem unde se blochează jucătorii</td></tr>
+          <tr><td>Versiunea jocului și sistemul</td><td>0.1, iOS</td><td>ca să găsim erorile pe anumite versiuni</td></tr>
+          <tr><td>Setări schimbate</td><td>muzica oprită</td><td>ca să știm ce deranjează</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Nu colectăm nume, email, număr de telefon, contacte, poze, locație sau identificatorul de publicitate al telefonului. Nu urmărim ce faci în alte aplicații și nu vindem date.</p>
+  </section>
+
+  <section>
+    <h2>Unde ajung datele</h2>
+    <p>Statisticile sunt procesate de PostHog, un serviciu de analiză a utilizării, pe servere din Uniunea Europeană. PostHog primește tehnic adresa IP a telefonului când trimite datele; nu o folosim ca să te identificăm. PostHog procesează datele doar în numele nostru, pe baza unui contract de prelucrare a datelor.</p>
+  </section>
+
+  <section>
+    <h2>Temeiul legal</h2>
+    <p>Statisticile se bazează pe consimțământul tău (art. 6 alin. 1 lit. a din Regulamentul (UE) 2016/679, GDPR, și art. 4 alin. 5 din Legea nr. 506/2004 privind stocarea de informații pe dispozitivul tău). Datele salvate doar pe telefon sunt strict necesare ca jocul să funcționeze.</p>
+  </section>
+
+  <section>
+    <h2>Cât le păstrăm</h2>
+    <p>Păstrăm statisticile cel mult 12 luni, apoi le ștergem. Dacă oprești statisticile din Setări, ID-ul aleator se șterge de pe telefon și nu mai trimitem nimic.</p>
+  </section>
+
+  <section>
+    <h2>Drepturile tale</h2>
+    <ul>
+      <li>Poți refuza statisticile la prima pornire sau le poți opri oricând din <strong>Setări → Statistici anonime</strong>.</li>
+      <li>Poți cere să vezi sau să ștergem datele trimise: scrie-ne la adresa de mai sus și include ID-ul instalării, pe care îl găsești în Setări.</li>
+      <li>Ai dreptul să depui o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), <a href="https://www.dataprotection.ro" rel="noopener">dataprotection.ro</a>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Copii</h2>
+    <p>Jocul nu cere vârsta. Dacă ai sub 16 ani, întreabă un părinte înainte să accepți statisticile.</p>
+  </section>
+
+  <section>
+    <h2>Modificări</h2>
+    <p>Dacă adăugăm ceva nou (de exemplu, reclame), actualizăm această pagină și data de sus înainte ca schimbarea să intre în joc, iar pentru orice prelucrare nouă bazată pe consimțământ te întrebăm din nou.</p>
+  </section>
+
+  <hr>
+
+  <div class="summary" id="en">
+    <p><strong>In short (English):</strong> the game doesn't ask for your name, email or location. If you accept anonymous statistics, we only learn about gameplay (for example, how high you got and why the block fell). You can say no or change your mind any time in Settings.</p>
+  </div>
+
+  <section>
+    <h2>Who is responsible</h2>
+    <p>Infinity Residence is developed by the Infinity Residence team (Raw Coder), Romania. Contact: <strong>rawcoder@icloud.com</strong>.</p>
+  </section>
+
+  <section>
+    <h2>What stays on your phone</h2>
+    <p>Your best score, settings and whether you've seen the tips are stored only on your device so the game works. They are never sent anywhere and are removed with the app.</p>
+  </section>
+
+  <section>
+    <h2>Anonymous statistics (only with your consent)</h2>
+    <p>On first launch the game asks whether you want to help with anonymous statistics. Nothing is sent until you say "Yes". If you agree, the game sends a random install ID, gameplay events (run started, floor reached, floor lost, run ended with height, zone, cause and duration), the game version and operating system, and changed settings. We do not collect your name, email, phone number, contacts, photos, location or advertising identifier, we do not track you across other apps, and we do not sell data.</p>
+    <p>Statistics are processed on our behalf by PostHog, an analytics service, on servers in the European Union, under a data processing agreement. PostHog technically receives your IP address when data is sent; we do not use it to identify you. Legal basis: your consent (GDPR art. 6(1)(a); Romanian Law 506/2004 art. 4(5)). Statistics are kept for at most 12 months. Turning statistics off in Settings deletes the random ID from your phone and stops all sending.</p>
+    <p>You can ask to see or delete the data sent from your install by writing to the address above with the install ID shown in Settings, and you can complain to the Romanian data protection authority (ANSPDCP, <a href="https://www.dataprotection.ro" rel="noopener">dataprotection.ro</a>). The game does not ask for age; if you are under 16, ask a parent before accepting statistics. We will update this page before any change (such as ads) takes effect.</p>
+  </section>
+
+  <footer>Infinity Residence · ultima actualizare / last updated: 9 noiembrie 2026</footer>
+</div>
+
+</body>
+</html>
